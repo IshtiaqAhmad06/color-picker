@@ -1,0 +1,24 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./pagess/Home";
+import About from "./pagess/About";
+import Contact from "./pagess/Contact";
+function App() {
+  
+  return (
+    <BrowserRouter>
+       <nav style={{padding:"20px",display:"flex",justifyContent:"center",
+       alignContent:"center",gap:"20px",
+       backgroundColor:"orange"}}>
+      <Link style={{textDecoration:"none",fontSize:"25px"}}to="/">Home</Link>
+      <Link style={{textDecoration:"none",fontSize:"25px"}} to="/about">About</Link>
+      <Link style={{textDecoration:"none",fontSize:"25px"}} to="/contact">Contact</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />}/>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+export default App

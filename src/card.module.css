@@ -1,0 +1,18 @@
+.card{
+    width:250px;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: orange;
+}
+.box{
+    width: 1090px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap:20px;
+    background-color: black;
+}
